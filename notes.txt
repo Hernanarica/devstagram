@@ -1,0 +1,5 @@
++---------+
+| Helpers |
++---------+
+Str::lower() => Helper de la la clase illuminate, me permite transformar una cadena a minuscula, funciona con una validacion unique.
+Str::slug()  => Helper de la la clase illuminate, transforma los espacios de una cadena en guiones medios, no funciona con una validacion unique.
