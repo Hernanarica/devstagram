@@ -3,3 +3,22 @@
 +---------+
 Str::lower() => Helper de la la clase illuminate, me permite transformar una cadena a minuscula, funciona con una validacion unique.
 Str::slug()  => Helper de la la clase illuminate, transforma los espacios de una cadena en guiones medios, no funciona con una validacion unique.
+
++---------------+
+| Autenticacion |
++---------------+
+auth()->attempt(campos, remenber) => Devuelve un Boolean si el usuario ingreso las credenciales correctas o no y como 2do parametro un remember que ayuda a mantener
+la session recordada como facebook, el parametro remember me crea una cookie que se mapea con un registro en la db remember_token y si es el mismo lo mantiene conectado todos
+el tiempo.
+auth()->user() => Devuelve un usuario logeado y sus datos.
+
+
++---------------------+
+| Redireccionamientos |
++---------------------+
+return back()->with('message', 'content') => Me devuelve a la pantalla anterior con un mensaje guardado en una variable de session.
+return redirect()->route(route) => Redirecciona a una ruta que tenga registrada en web.php
+
++---------------------+
+| Directivas de blade |
++---------------------+

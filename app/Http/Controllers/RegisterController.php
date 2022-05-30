@@ -31,7 +31,17 @@ class RegisterController extends Controller
 			'email'    => $request->email,
 			'password' => Hash::make($request->password)
 		]);
+
+//		1ra forma de autenticar
+//		auth()->attempt([
+//			'name'     => $request->name,
+//			'email'    => $request->email,
+//			'password' => $request->password
+//		]);
+
+//		2da forma de autenticar
+		auth()->attempt($request->only('name', 'email', 'password'));
 		
-		return redirect()->route('post.index');
+		return redirect()->route('muro');
 	}
 }

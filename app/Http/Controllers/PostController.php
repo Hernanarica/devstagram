@@ -8,6 +8,12 @@ class PostController extends Controller
 {
 	public function index()
 	{
-		dd('desde muro');
+		return view('sections.dashboard');
+	}
+	
+	public function __construct()
+	{
+		// Si el usuario no esta logeado me redirecciona a la vista de login.
+		$this->middleware('auth');
 	}
 }
