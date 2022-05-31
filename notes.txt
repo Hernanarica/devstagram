@@ -22,3 +22,9 @@ return redirect()->route(route) => Redirecciona a una ruta que tenga registrada 
 +---------------------+
 | Directivas de blade |
 +---------------------+
+
+
+
+
+Route model binding, es una ruta asociada a un modelo, no hace falta tomar un parametro y consultar a la DB, sino que laravel lo hace
+automaticamente.

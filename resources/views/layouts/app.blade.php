@@ -20,7 +20,7 @@
 				<nav class="flex items-center gap-2">
 					@auth
 						<a href="{{ route('home') }}" class="font-bold uppercase text-gray-600">Home</a>
-						<a href="{{ route('muro') }}" class="font-bold uppercase text-gray-600">Muro</a>
+{{--						<a href="{{ route('muro') }}" class="font-bold uppercase text-gray-600">Muro</a>--}}
 						<form action="{{ route('logout') }}" method="post">
 							@csrf
 							<button type="submit" class="btn btn-font-bold uppercase text-gray-600">Cerrar sesion ({{ auth()->user()->username }})</button>
